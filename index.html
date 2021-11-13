@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2048</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<section class="game">
+    <h1>2048</h1>
+
+    <div id="score"></div>
+
+    <div class="table"></div> 
+
+    <button id="newGame">Nouvelle Partie</button>
+
+    <audio id="audioPlayer" controls="controls" loop>
+        <source src="son.ogg"></source>
+    </audio> 
+
+</section>
+
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script type="text/javascript" src="Base2048.js"></script>
+    <script type="text/javascript">
+        $(function()
+        {
+            
+            $('.table').game2048(); // appel de la fonction 'game2048' du pluggin appliquée à la div de class 'Games'
+        });
+    </script>
+</body>
+</html>
