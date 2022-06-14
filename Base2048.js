@@ -1,8 +1,8 @@
 (function($) // début du pluggin
 {
+    let score = 0;
     $.fn.game2048 = function() //function game2048 du pluggin
     {
-        let score = 0;
         $('#score').html('Score : '+ score);
         // génération du tableau (table, tr, td) vide (rempli de zéros)
        function generateMap()
