@@ -83,6 +83,7 @@
         $("#newGame").on("click", newGame);
 
         function newGame(){
+            score = 0;
             $('table').remove();
             $('.table').game2048();
         }
